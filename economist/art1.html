@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+ <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+
+  <!-- Demo styles -->
+  <style>
+  
+    body {
+      background: #fff;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+      background-image: url(uyy.jpg);
+    }
+
+    .swiper-container {
+      width: 95%;
+      height: 10%;
+      margin-top: 90px;
+      margin-left: 50px;
+    }
+
+    .swiper-slide {
+      font-size: 18px;
+      height: auto;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+     
+ padding: 30px 30px;
+    }
+    .swiper-slide p{
+      color: #fff;
+      background-color: #000;
+      padding: 30px 30px;
+    font-family: system-ui;
+    margin-right: -10px;
+    margin-left: -10px
+    }
+
+
+
+
+
+
+nav{
+
+  background:red;
+  height: 80px;
+  width: 90%;
+  margin-top: 20px;
+  text-decoration: none;
+  border: 42px solid black;
+border-top: none;
+border-bottom: none;
+border-left:none;
+
+}
+label.logo{
+  color: white;
+  font-size: 50px;
+  line-height: 80px;
+  padding: 0 50px;
+  font-weight: 200;
+  margin-left: 5px;
+  font-family: system-ui;
+  flex-wrap:wrap; 
+  
+}
+nav ul{
+  
+  border: 42px solid black;
+border-right:0px;
+border-bottom: none;
+border-left:none;
+  float: right;
+  margin-right: 20px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+a.active,a:hover{
+  background: #1b9bff;
+  transition: .5s;
+
+}
+h4{
+  color: #ff0;
+  font-size: 60px;
+
+}
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 10px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+@media (max-width: 0px){
+
+  nav ul li a{
+    font-size: 16px;
+  }
+}
+@media (max-width: 0px){
+  .checkbtn{
+    display:block;
+  }
+  ul{
+  position: fixed;
+    width: 40%;
+    height: 90vh;
+    background: #2c3e50;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .9s;
+
+  }
+  nav ul li{
+    display: block;
+    margin: 10px 0;
+    line-height: 30px;
+    margin-right: 100px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  a:hover,a.active{
+    background: none;
+    color: #0082e6;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+}
+img{    
+height:100px;
+width: 100px;
+margin-top:-40px;
+position:block;
+margin-right:-80px;
+}
+
+
+
+.clr{
+  background-color: #000;
+  padding: 10px 100px;
+  color:#6b6b6b;
+}
+
+
+
+
+
+  </style>
+</head>
+
+<body>
+
+
+    <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo"><img src="economist.jpg"><br>UZBEK economist</label>
+      <ul>
+        <li><a class="active" href="books.html">ARTICLE</a></li>
+        <li><a href="books.html">BOOKS</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+        <li><a href="menu.html">MENU</a></li>
+      </ul>
+    </nav>
+    
+  
+  <!-- Swiper -->
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <h4>THE WORLD</h4>
+       <p>
+         Governments in Britain and
+across the European Union
+rushed to approve a post-Brexit
+trade agreement before
+December 31st, the date on
+which Britain’s transition
+period ends. The deal, which
+was announced on Christmas
+Eve, covers goods, but says
+little about financial services.
+Some disruption for business
+is expected. The eu’s member
+states back the pact, though the
+measures will come into force
+only provisionally until the
+European Parliament can give
+its blessing.
+Scientists were worried by two
+new and more contagious
+variants of covid-19 that are
+spreading around the world.
+Nearly all the countries in the
+eubegan vaccinating citizens,
+a week after the European
+Medicines Agency approved
+the Pfizer-BioNTech vaccine.
+The Netherlands said it would
+not start until January 8th,
+claiming it wanted more time
+to implement its programme
+“carefully”. Spain’s health
+minister said a registry would
+be kept of people who refused
+to get vaccinated.
+British regulators authorised a
+vaccine developed by Oxford
+University and AstraZeneca for
+use in the uk. It is the third
+available inoculation for
+covid-19 that has been fully
+tested and it can be rolled out
+quickly in bulk, notably to lowand middle-income countries.
+State investigators in Russia
+laid more dubious fraud charges against Alexei Navalny,
+the country’s leading opposition politician. This came after
+Mr Navalny posted a tape of his
+phone call with an agent of the
+fsb security police, whom he
+tricked into admitting that the
+fsb had tried to poison him
+with a nerve agent in August.
+Vladimir Putin said that if the
+police had wanted to poison Mr
+Navalny, he would be dead.
+In a u-turn, Donald Trump
+signed a $900bn stimulus bill
+into law. He had threatened to
+veto the legislation because, he
+said, the $600-per-person it
+provides in direct payments is
+not enough. Mr Trump wants
+payments of $2,000, which the
+House of Representatives duly
+noted and approved in a supplementary bill; the Senate will
+now consider the measure.
+The Department of Justice filed
+a lawsuit against Walmartfor
+an alleged lack of oversight in
+fulfilling prescriptions for
+opioids, which it says helped
+fuel the opioid crisis. In a
+strongly worded rebuttal, the
+retailer said the suit was riddled with factual mistakes and
+“cherry-picked documents”
+that were trying to shift blame
+away from the Drug Enforcement Administration.
+Argentina became the first big
+Latin American country to
+legalise abortion, after a
+crucial vote in the Senate drew
+more support than had been
+expected. Women will now be
+able to get an abortion for any
+reason up to 14 weeks into a
+pregnancy
+       </p>
+      </div>
+    </div>
+    <!-- Add Scroll Bar -->
+    <div class="swiper-scrollbar"></div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class=" clr">&copy;sarvar raxmonov 2020</div>
+  <!-- Swiper JS -->
+   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      direction: 'vertical',
+      slidesPerView: 'auto',
+      freeMode: true,
+      scrollbar: {
+        el: '.swiper-scrollbar',
+      },
+      mousewheel: true,
+    });
+  </script>
+</body>
+
+</html>
